@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    height: 5000px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top:0;
+}
+
+.container{
+    width: 70%;
+    margin: auto;/*بتجيب الليست مع الصورة بالنص افقيا*/
+    /*background-color: red;*/
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;/*بتجيب الليستة بالنص عموديا*/
+}
+
+
+.navbar .logo{
+    width: 30%;
+}
+
+.navbar .logo img{
+    width: 200px;
+}
+
+.navbar .list{
+    flex-grow: 1;/*عشان الليست توخذ الباقي*/
+}
+
+.list ul{
+    display: flex;
+    list-style-type: none;
+    gap:10px;
+    /*background-color: rgb(150, 135, 235);*/
+    justify-content: flex-end;
+}
+
+
+.list ul a{
+    color: #fff;;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.header{
+    background-color: rgb(85, 85, 85);
+    color:#fff;
+    height: 517px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-direction: column;*/
+}
+
+.header-content{
+    background-color: rgba(0, 0, 0,0.2);
+    padding:40px;
+    border-top: 1px solid coral;
+}
